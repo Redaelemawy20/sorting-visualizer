@@ -12,7 +12,7 @@ const Form = ({ onSubmit, length, isRunning }) => {
       <input
         className="input"
         type="text"
-        placeholder="Enter array length"
+        placeholder="Enter array size"
         value={value}
         onChange={(e) => {
           setValue(e.target.value);
@@ -20,7 +20,7 @@ const Form = ({ onSubmit, length, isRunning }) => {
         disabled={isRunning}
       />
       <button type="submit" className="btn btn--accent" disabled={isRunning}>
-        generate anthor array
+        generate
       </button>
     </form>
   );
